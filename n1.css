@@ -1,0 +1,870 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+   
+   font-style: normal;
+}
+
+html,body{
+    width: 100%;
+    overflow-x: hidden;
+}
+.seach input::placeholder {
+    
+    padding-left: 10px;
+    color: #c62929;
+}
+.header{
+    margin-top: 20px;
+}
+.seach > input{
+    height: 40px;
+    border-color: rgb(148,199,52);
+    margin-top: 14px;
+    border-radius: 20px;
+    width: 100%;
+    position: relative;
+    display: block;
+    outline:none;
+   
+
+}
+.tintuc > a  , .vpdata >a{
+    color: black;
+}
+.tintuc > a:hover  , .vpdata > a:hover{
+    color: green;
+}
+
+
+
+
+.timkiem {
+    position: absolute;
+
+    color: rgb(148,199,52);
+    right: 7%;
+    padding: 27px 2px;
+    top: 0;
+    cursor: pointer;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+   background-color: green;
+}
+
+
+
+  .hotro{
+    display: flex;
+  }
+  .hotro >p {
+      padding-left: 10px;
+  }
+  .hotro img{
+     height: 91%;
+   
+  }
+   
+  .tt >li >a{
+      color: white;
+  }
+
+  .menu div > ul {
+    list-style-type: none;
+  }
+  .menu{
+      background-color:#85b842 ;
+      margin-top: 5px;
+      width: 100%;
+    
+  }
+  .menu div > ul > li {
+    float: left;
+   
+   
+    cursor: pointer;
+}
+.tt >li:nth-child(9){
+    border-radius: 50%;
+    background: green;
+}
+
+
+  .menu div > ul > li:hover{
+      background:green ;
+  }
+  .navbar {
+   margin-bottom: 0px;
+  }
+
+  .khoixoa , .menuba {
+    opacity: 0;
+    display: none;
+    
+}
+
+.spm {
+    position: absolute;
+    right: 6%;
+    top: 50%;
+    border-radius: 50%;
+    background: #528f52;
+    padding: 15px;
+    transform: translateY(-50%);
+}
+.spm >a{
+    color: white;
+}
+.spm:hover{
+    background: #a4f836;
+    cursor: pointer;
+}
+
+
+  @media (max-width : 1250px and min-w){
+
+    .khoixoa , .menuba{
+        display: inline-block;
+    }
+    
+    button.owl-prev > span , button.owl-next > span{
+      opacity: 0;
+      display: none;
+    }
+    .spm{
+        display: none;
+    }
+
+    .menu div > ul > li{
+        float: none;
+        font-size: 20px;
+        width: 62%;
+        
+    }
+     .danhsachsanpham img{
+         margin-bottom: 20px;
+        
+     }
+    .menu div > ul {
+        float: none;
+        font-size: 20px;
+       
+        
+    }
+   
+    .header{
+        margin-top: 40px;
+    }
+
+    .menu{
+        position: absolute;
+        top: 0;   
+        z-index: 15;
+        height: 100%;
+        margin-top: -2px;
+        display :none;
+        position: fixed;
+        animation: dichuyen 0.5s  forwards;
+          
+    }
+    @-webkit-keyframes dichuyen {
+        0%  {width: 0;  }
+        100% {width: 60%;}
+    }
+
+    .menu.nguocdichuyen{
+        animation: dichuyennguoc 0.5s  forwards;
+        opacity: 0;
+        display: none !important;
+    }
+
+    @-webkit-keyframes dichuyennguoc {
+        0%  {width: 60%; opacity: 1;}
+        100% {width: 0%; opacity: 0;}
+    }
+
+   
+
+    .spmua{
+        opacity: 0;
+    }
+   
+    i.fa.fa-bars.menubar {
+        margin-top: 30px;
+        margin-left: 20px;
+        margin-right: 30px;
+        position: absolute;
+        top: 0;
+        z-index: 15;
+    }
+    
+    
+    i.fa.fa-times.xoa {
+        font-size: 30px;
+        float: right;
+        padding: 10px;
+    }
+
+    .khoixoa{
+        position: absolute;
+        background:rgb(132 111 111 / 56%);
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        top:0;
+        position: fixed;
+        opacity: 0;
+        animation: dichuyenxoa 0,5s  forwards;
+
+    }
+     
+    @-webkit-keyframes dichuyenxoa {
+        0%  {width: 0;}
+        100% {width: 100%;}
+    }
+
+
+    .khoixoa.nguocdichuyenxoa {
+        animation: dichuyennguocxoa1 0.5s  forwards;
+    }
+
+    @-webkit-keyframes nguocdichuyenxoa1 {
+        0%  {width:100%; opacity: 1;}
+        100% {width: 0%; opacity: 0;}
+    }
+
+
+
+    .anhcty{
+        text-align: center;
+    }
+     
+    .hotro , .lienhe{
+        margin-top: 20px;
+    }
+
+    .carousel-indicators{
+        z-index: 1;
+    }
+
+     .menuba{
+        
+            position: absolute;
+            left: 3%;
+            font-size: 25px;    
+            z-index: 4;
+            opacity: 1;
+            top:5%;
+      }
+      .tt li{
+          border: 1px solid #ba9797;
+          width: 100%;
+      }
+
+
+  }
+ 
+  .carousel-indicators {
+    width: 18%;
+    left: 108%;
+   
+}
+.maunoi > li {
+    background: green;
+}
+ .timkiemdata .item img{
+     width: 100%;
+ }
+.hotro , .lienhe {
+    margin-top: 14px;
+}
+
+.danhsachsanpham img{
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid green;
+}
+.danhsachsanpham{
+    margin-top: 20px;
+}
+.gioithieu {
+    text-align: center;
+    padding-top: 20px;
+}
+.sp{
+    font-size: 30px;
+    font-weight: bold;
+    color: #85b842;
+    
+}
+.thamquan{
+    font-weight: bold;
+}
+.owl-dots {
+    display: none;
+}
+button.owl-prev > span , button.owl-next > span{
+    font-size: 30px;
+}
+.slidercd  img {
+    border-radius: 15px;
+}
+
+.container.slidercd {
+    background: rgb(239 237 237);;
+    padding-top: 25px;
+}
+
+button.owl-next {
+    position: absolute;
+    padding: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -26px;
+    
+}
+button.owl-next >span ,button.owl-prev >span{
+    font-size: 40px;
+}
+
+button.owl-prev {
+    position: absolute;
+    padding: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -26px;
+    
+}
+.khoicangiua {
+    text-align: center;
+    margin-top: 12px;
+    background: white; 
+    padding: 17px;
+    margin-top: -3px;
+  
+
+ 
+}
+.khoicangiua > span {
+    font-size: 12px;
+  
+    font-weight: bold;
+    
+}
+.khoicangiua span:nth-child(2){
+    color: red;
+}
+.list3{
+    margin-top: 20px;
+}
+
+.list3 img {
+    width: 100%;
+}
+.slidercd1{
+  
+    margin-top: 20px;
+}
+
+.slidercd1 img{
+    border-radius: 10px;
+    border: 1px solid green;
+}
+.slidercd1 .item{
+   
+    border-radius: 10px;
+}
+.khoingoai{
+   
+    background-size: cover;
+}
+
+.khoigiua{
+    text-align: center;
+    width: 80%;
+    background: white;
+    padding: 25px;
+    margin-left: 10%;
+    z-index: 10;
+    margin-top: -20px;
+    position: relative;
+    box-shadow: -1px -13px  #00BCD4;
+    border-radius: 10px;
+}
+.owl-carousel.owl-theme.list3.owl-loaded.owl-drag {
+    padding-bottom: 33px;
+}
+.sp {
+    text-align: center;
+    margin-top: 15px;
+}
+.xemthem img {
+    width: 100%;
+}
+.xemthem{
+    margin-top: 10px;
+}
+
+.khoixemthem {
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    background: white;
+}
+.xemthem{
+    background: #f1f1f1;
+}
+.xemthem .item{
+    margin-bottom: 30px;
+}
+
+
+.loaddata {
+    text-align: center;
+    
+    margin-left: 35%;
+    border-radius: 36px;
+    width: 30%;
+    border: 3px solid green;
+    padding: 18px;
+    margin-bottom: 15px;
+}
+
+.loaddata:hover{
+    background: rgb(148,199,52);
+}
+.giua{
+    text-align: center;
+}
+
+.scroll{
+    
+    font-size:36px ;
+     background: green;
+     color: white; padding: 3px;
+     pointer-events: none;
+     right: 30px;
+      position: fixed;
+     bottom: 40px;
+     cursor: pointer;
+     opacity: 1;
+     transform: opacity 0.3 ease-in-out;
+    
+}
+.scroll:hover{
+    transform: 0.5s;
+}
+.khoikho {
+   
+    text-align: center;
+     width: 95%;
+}
+.khoikho  .imgfooter {
+   
+    float: right;
+    padding-right: 10px;
+   
+}
+.khoi6 {
+   
+    text-align: center;
+     width: 83% !important;
+} 
+
+.khoi6 .imgfooter {
+   
+    float: right;
+    padding-right: 10px;
+   
+}
+
+
+@media (max-width : 967px){
+
+    .imgfooter {
+   
+        float: right;
+        padding-right: 10px;
+       
+        width: 50%;
+       
+    }
+
+   .khoi6{
+       width: 95% !important;
+   }
+    .khoi6 .imgfooter{
+        width: 50%;
+    }
+   .mat{
+       display: none;
+   }
+  
+}
+
+.khoigiuagt{
+    margin-top: 40px;
+}
+
+.khoioption{
+    background-image: url("image/Kem-dưỡng-đặc-trị-da-mụn-Fresh-White-Sand-Platinum-Acne-Clarifying-Cream.jpg");
+    width: 100%;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+}
+.khoihh{
+    display: block;
+}
+
+.khoihh1 img{  
+    width: 50px ;
+    height: 50px;
+}
+.khoikm ul{
+    list-style: none;
+}
+.khoihh img{  
+    width: 50px ;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+   }
+.dataflex{
+  
+   width: 100%;
+   margin-top:30px;
+}
+
+.dataflex .khoidata {
+    width: 18%;
+  
+    margin-bottom: 20px;
+   margin : 1%;
+    float: left;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.khoidata  img {
+    width: 100%;
+  
+}
+
+
+
+.thanhphan{
+    width: 100%;
+    padding: 7px;
+    background: #faf0df;
+   
+}
+ .menuba1{
+     display: none;
+ }
+ .khoixoa11 .xoa11{
+    display: none;
+}
+@media (max-width : 768px){
+
+    .dataflex .khoidata {
+        width: 31%;
+      
+       
+    }
+}
+.menudangreponse{
+    display: none;
+}
+
+@media (max-width : 1024px){
+
+    .cangiuagt {
+       text-align: center;
+    }
+    .menu{
+        display: none;
+    }
+    .khoi1xoa{
+        display: block;
+        float: right;
+    }
+
+    .khoixoa11 .xoa11 {
+        float: right;
+        padding: 20px;
+        display: none;
+        z-index: 15;
+        position: absolute;
+        right: 10px;
+
+    }
+
+    .menuba1{
+        display: block;
+        padding: 20px;
+
+
+    }
+    .menu{
+        display: none;
+    }
+
+
+
+    .menudangreponse {
+        position: absolute;
+        z-index: 13;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+        background: #dddada;
+        position: fixed;
+    }
+    .menudangreponse .tt11{
+        color: #85b842;
+    }
+    .spmres{
+        display: none;
+    }
+
+
+
+
+
+    
+    
+}
+
+@media (max-width : 576px){
+
+   .suacol{
+         width: 100%;
+        
+       
+   }
+   .itemtt{
+       display: block !important;
+       float: right;
+   }
+
+   .suacol .itemtt{
+       width: 50%;
+       padding: 10px;
+   }
+   .itemtt > img {
+       width: 100% !important;
+      
+   }
+
+   .khoitt{
+       margin-left: 0 !important;
+       margin-top:10px;
+   }
+
+   .khoimat{
+       display: none;
+   }
+
+}
+
+input.plus.button.is-form {
+    padding: 11px;
+    border-radius: 0px 30px 30px 0px;
+    border: none;
+    outline:none;
+    margin-left: -7px;
+}
+
+
+input.minus.button.is-form {
+    padding: 11px;
+    border-radius: 30px 0 0 30px;
+    margin-right: -7px;
+    border: none;
+    outline:none;
+   
+}
+
+.qty[type=number] {
+    -moz-appearance: textfield;
+    padding: 11px;
+    background: wheat;
+    border: none;
+    outline:none;
+  }
+
+  .qty::-webkit-outer-spin-button,
+  .qty::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  border: none;}
+
+  .linkdathang.text-center {
+    display: block;
+    background-image: linear-gradient(178deg,yellow , orange );
+    padding: 20px;
+    width: 73%;
+    margin-top: 20px;
+}
+.iconlh a:hover{
+    background: rgb(148,199,52);
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+.khoittmsp{
+    display: flex;
+}  
+ .khoittmsp  .classtenmsp input{
+  width:80%
+ }
+
+ .owl-theme .owl-nav[class*=owl-]:hover {
+    background: none !important;
+    
+}
+
+.khoi3{
+    margin-top:20px
+}
+.item{
+    outline: none;
+}
+.khoi3 .item img{
+    width: 100%;
+    border-radius: 10px;
+    border:1px solid green;
+
+}
+.khoi4spchay .item img{
+    width: 100%;
+    padding: 10px;
+}
+.slider3sp{
+    background-image: url('image/00_Main_onlyone_BG.jpg');
+    padding-top: 20px;
+    padding-bottom: 81px;
+    margin-top: 40px;
+   
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; 
+}
+
+
+.khoi3slider{
+    background: #ebebebfc;
+     width: 80%;
+     margin: auto;
+    padding: 20px;
+    margin-top: -37px;
+   
+    position: relative;
+    box-shadow: 0px -5px 0px 0px green;
+   
+    border-radius: 5px;
+}
+.item1 img {
+    border: 1px solid green;
+    padding: 1px;
+    
+
+}
+
+.item1{
+padding: 10px;
+outline:none;
+}
+
+.item2 {
+    width: 20%;
+    padding: 10px;
+    float: left;
+    overflow: hidden;
+    border-radius: 48px;
+}
+
+
+.khoi5sp .maunen{
+    background: #e3e3e342;
+}
+
+.khoittnt{
+  
+    background: white;
+    padding-bottom: 5px;
+    padding-top: 3px;
+    border-radius: 3px;
+}
+.khoittnt >p{
+    color: red;
+  
+}
+.khoi5item .item2 >img{
+
+    width: 100%;
+}
+.khoi5spchay img{
+    width: 100%;
+}
+.Xemthem {
+    background: green;
+    padding: 10px;
+    width: 25%;
+    margin-left: 36%;
+    margin-top: 10px;
+}
+.Xemthem:hover{
+    background: rgb(127, 173, 127);
+}
+.khoi4footer .khoiitemfooter img {
+    width: 100%;
+}
+.khoi4footer.slick-initialized.slick-slider {
+    background: #b6efb61f;
+    display: block;
+    outline:none;
+}.khoitextfooter{
+    background: white;
+}
+button.slick-next.slick-arrow:hover {
+    background: green !important;
+}
+
+button.slick-prev.slick-arrow:hover {
+    background: green !important;
+}
+
+.khoi2xoa{
+    display: none;
+}
+.khoi1xoa{
+    display: block;
+}
+
+@media (max-width : 768px){
+
+   .item{
+    margin-bottom: 15px;
+   }  
+
+   .item2{
+       width: 33.3% !important;
+   }
+
+   .khoi1xoa{
+       display: none;
+   }
+   .khoi2xoa{
+       display: block
+   }
+
+    }
+
+    .khoimua{
+        text-align: center;
+        width: 50%;
+    }
